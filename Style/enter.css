@@ -1,0 +1,84 @@
+body {
+  font-family: 'Russo One', sans-serif;
+  overflow: hidden;
+  color: #585858;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../Image/start/Reg.svg);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 501px) {
+  .wrapper {
+    background-size: cover;
+    background-position: 0%;
+  }
+}
+
+.container {
+  max-width: 1202px;
+  margin: 5vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 978px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 787px) {
+  .container {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 501px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__login {
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=enter.css.map */
