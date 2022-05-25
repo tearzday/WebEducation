@@ -208,7 +208,7 @@ body {
   }
 }
 
-.form__passwordTwo {
+.form__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +221,7 @@ body {
 }
 
 @media (max-width: 501px) {
-  .form__passwordTwo {
+  .form__name {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -233,7 +233,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .form__passwordTwo label {
+  .form__name label {
     margin-bottom: 25px;
   }
 }
@@ -321,7 +321,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   background-color: #9C73FF;
 }
 
-input[type=button] {
+input[type=submit] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -336,7 +336,7 @@ input[type=button] {
 }
 
 @media (max-width: 787px) {
-  input[type=button] {
+  input[type=submit] {
     width: 250px;
     height: 50px;
     font-size: 20px;
@@ -344,12 +344,12 @@ input[type=button] {
 }
 
 @media (max-width: 501px) {
-  input[type=button] {
+  input[type=submit] {
     margin-bottom: 20px;
   }
 }
 
-input[type=button]:hover {
+input[type=submit]:hover {
   background-color: #9C73FF;
 }
 /*# sourceMappingURL=enter.css.map */

@@ -21,25 +21,25 @@
                 <h1>Регистрация на сайте</h1>
             </div>
             <div class="form">
-                <form action="">
+                <form action="php/enter/reg.php" method="post">
                     <div class="form__login" style="margin-bottom: 0px;">
                         <label for="login">Логин пользователя:</label>
-                        <input type="text" placeholder="Введите логин" name="login">
+                        <input type="text" placeholder="Введите логин" name="login" id="login">
+                    </div>
+                    <div class="form__name">
+                        <label for="name">Имя пользователя:</label>
+                        <input type="text" placeholder="Введите ваше имя" name="name" id="name">
                     </div>
                     <div class="form__email">
                         <label for="email">Электронная почта:</label>
-                        <input type="email" placeholder="Введите вашу почту" name="email">
+                        <input type="email" placeholder="Введите вашу почту" name="email" id="email">
                     </div>
                     <div class="form__password">
                         <label for="password">Пароль пользователя:</label>
-                        <input type="password" placeholder="Введите пароль" name="password">
-                    </div>
-                    <div class="form__passwordTwo">
-                        <label for="passwordtwo">Подтверждение пароля:</label>
-                        <input type="password" placeholder="Введите пароль" name="passwordtwo">
+                        <input type="password" placeholder="Введите пароль" name="password" id="password">
                     </div>
                     <div class="btn">
-                        <input type="button"  value="Зарегестрироваться">
+                        <input type="submit"  value="Зарегестрироваться">
                         <a class="block__btnOne" href="enter.html">Войти</a>
                     </div>
                 </form>
