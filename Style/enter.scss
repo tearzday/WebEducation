@@ -1,0 +1,204 @@
+body{
+    font-family: 'Russo One', sans-serif;
+    overflow: hidden;
+    color: #585858;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    background-image: url(../Image/start/Reg.svg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 80%;
+    @media (max-width: 501px){
+        background-size: 300px;
+        background-position: 0%;
+    }   
+    justify-content: center;
+}
+
+.container{
+    max-width: 1202px;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @media (max-width: 1200px){
+        max-width: 978px;
+    }
+    @media (max-width: 992px){
+        max-width: 768px;
+    }
+    @media (max-width: 787px){
+        max-width: 520px;
+
+    }
+    @media (max-width: 501px){
+        max-width: 500px;
+    }
+}
+
+
+.header{
+    h1{
+        font-size: 70px;
+        @media (max-width: 992px){
+            text-align: center;
+        }
+        @media (max-width: 787px){
+            font-size: 50px;
+        }
+        @media (max-width: 501px){
+            font-size: 35px;
+        }
+    }
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    @media (max-width: 787px){
+        font-size: 20px;
+    }
+    @media (max-width: 501px){
+        justify-content: center;
+    }
+    &__login{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        @media (max-width: 787px){
+            margin-bottom: 50px;
+        }
+        @media (max-width: 501px){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            label{
+                margin-bottom: 25px;
+            }
+        }
+        
+    }
+
+    &__password{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        @media (max-width: 501px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                margin-bottom: 25px;
+            }
+        }
+        
+    }
+    &__email{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        @media (max-width: 501px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                margin-bottom: 25px;
+            }
+        }
+        
+    }
+    &__passwordTwo{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        @media (max-width: 501px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                margin-bottom: 25px;
+            }
+        }
+        
+    }
+}
+
+input[type=text], input[type=password] ,  input[type=email] {
+    width: 500px;
+    border-radius: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    margin: 0px 0 22px 30px;
+    display: inline-block;
+    border: none;
+    background: rgba(157, 115, 255, 0.3);
+    &:focus{
+        background: rgba(157, 115, 255, 0.8);
+    }
+    @media (max-width: 787px){
+        width: 380px;
+        margin-left: 0;
+    }
+    @media (max-width: 501px){
+        width: 320px;
+        margin-left: 0;
+    }
+  }
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    @media (max-width: 501px){
+        flex-direction: column;
+        align-items: center;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        width: 300px;
+        height: 60px;
+        font-size: 25px;
+        border: 3px solid #9C73FF;
+        border-radius: 100px;
+        background: rgba(157, 115, 255, 0.3);
+        @media (max-width: 787px){
+            width: 250px;
+            height: 50px;
+            font-size: 20px;
+        }
+        &:hover{
+            background-color: #9C73FF;
+        }
+    }
+}
+
+input[type=button]{
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+    border: 3px solid #9C73FF;
+    border-radius: 100px;
+    background: rgba(157, 115, 255, 0.3);
+    @media (max-width: 787px){
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+    }
+    @media (max-width: 501px){
+        margin-bottom: 20px;
+    }
+    &:hover{
+        background-color: #9C73FF;
+    }
+}
