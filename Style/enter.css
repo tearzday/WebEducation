@@ -325,6 +325,7 @@ input[type=button] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  color: black;
   display: block;
   width: 300px;
   height: 60px;
