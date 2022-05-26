@@ -12,12 +12,16 @@ $password = md5($password."ddsadwqdq");
     $result = $mysql -> query("SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$password' ");
 
     $user = $result->fetch_assoc();
+
+
     if (count ($user) == 0){
         echo "Такой пользователь не найден";
         exit();
     }
     else{
-       setcookie('user', $user['name'] , time() + 5, "/");
+       setcookie('name', $user['name'] , time() + 3600 * 24, "/");
+       setcookie('login', $user['login'] , time() + 3600 * 24, "/");
+       setcookie('email', $user['email'] , time() + 3600 * 24, "/");
     }
 
     $mysql -> close();
