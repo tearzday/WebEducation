@@ -1,3 +1,7 @@
+<?php
+    $mysql = new mysqli('localhost', 'root' , '' , 'register');
+    
+?>
 <!DOCTYPE html>
 <html lang="ru">
     <head>
@@ -32,7 +36,16 @@
         <div class="container">
             <div class="body">
                 <div class="body__left">
-                    <img src="../Image/icons/profil.svg" alt="Фотография ученика">
+                    <img src="ava/<?=$_COOKIE['photo']?>" alt="Фотография ученика">
+                    <form action="addPhoto.php" method="POST" enctype="multipart/form-data" id="form_send_file">
+                        <!--<input type="file" name="file">
+                        <input type="submit" value="Загрузить" name="set_avatar"> -->
+                        <input onchange="document.getElementById('form_send_file').submit()" style="z-index: -1;" type="file" id="file" name="file" value="Выбрать файл" class="input-file">
+                        <label for="file" class="btn btn-tertiary js-labelFile">
+                            <i class="icon fa fa-check"></i>
+                            <span class="js-fileName">Загрузить аватарку</span>
+                        </label>
+                    </form>
                     <ul>
                         <li>Имя: <?=$_COOKIE['name']?></li>
                         <li>Логин: <?=$_COOKIE['login']?></li>
@@ -45,12 +58,12 @@
                         <div class="test__rowOne">
                             <div class="test__rowOne__One">
                                 <p>Основы HTML</p>
-                                <p>Статус</p>
+                                <p></p>
                                 <p>Ссылка</p>
                             </div>
                             <div class="test__rowOne__Two">
                                 <p>Основы CSS</p>
-                                <p>Статус</p>
+                                <p></p>
                                 <p>Ссылка</p>
                             </div>
                         </div>
@@ -58,13 +71,13 @@
                             <div class="test__rowTwo__One">
                                 <p>Основы HTML и CSS. <span class="tema">
                                     <br> Часть 1</span></p>
-                                <p>Статус</p>
+                                <p></p>
                                 <p>Ссылка</p>
                             </div>
                             <div class="test__rowTwo__Two">
                                 <p>Основы HTML и CSS.<span class="tema">
                                     <br> Часть 2</span></p>
-                                <p>Статус</p>
+                                <p></p>
                                 <p>Ссылка</p>
                             </div>
                         </div>

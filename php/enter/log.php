@@ -14,6 +14,7 @@ $password = md5($password."ddsadwqdq");
     $user = $result->fetch_assoc();
 
 
+
     if (count ($user) == 0){
         echo "Такой пользователь не найден";
         exit();
@@ -22,6 +23,10 @@ $password = md5($password."ddsadwqdq");
        setcookie('name', $user['name'] , time() + 3600 * 24, "/");
        setcookie('login', $user['login'] , time() + 3600 * 24, "/");
        setcookie('email', $user['email'] , time() + 3600 * 24, "/");
+       setcookie('photo', $user['photo'] , time() + 3600 * 24, "/");
+       //var_dump($photo); //нужно решать!
+       //setcookie('id', $user['id'] , time() + 3600 * 24, "/");
+       //var_dump($login);
     }
 
     $mysql -> close();
