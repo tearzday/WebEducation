@@ -29,29 +29,12 @@
 
 //подключение к бд
     $mysql = new mysqli('localhost', 'root' , '' , 'register');
-
-//проверка на ранее зареганных пользователей
-    $result = $mysql -> query("SELECT * FROM `users` WHERE `login` = '$login' OR `email` = '$email' ");
-
-    $user = $result->fetch_assoc();
-
-    if (count ($user) == 0){
-        $mysql -> query("INSERT INTO `users` (`login`, `name`, `email`, `password` , `photo`) VALUES('$login', '$name', '$email', '$password' , '$photo')");
-        $mysql -> close();
-        header('Location: /enter.html');
-    }
-
-    else{
-        echo "Данный логин или почта уже зарегестрированна";
-    }
-
-
-   
+    $mysql -> query("INSERT INTO `users` (`login`, `name`, `email`, `password` , `photo`) VALUES('$login', '$name', '$email', '$password' , '$photo')");
     
 
-    
+    $mysql -> close();
 
 //переадресация
 
-//header('Location: /enter.html')
+header('Location: /enter.html')
 ?>

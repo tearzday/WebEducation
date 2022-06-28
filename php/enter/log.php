@@ -24,10 +24,12 @@ $password = md5($password."ddsadwqdq");
        setcookie('login', $user['login'] , time() + 3600 * 24, "/");
        setcookie('email', $user['email'] , time() + 3600 * 24, "/");
        setcookie('photo', $user['photo'] , time() + 3600 * 24, "/");
-       //var_dump($photo); //нужно решать!
+       setcookie('user_id', $user['id'] , time() + 3600 * 24, "/");
+       //var_dump( $userid); //нужно решать!
        //setcookie('id', $user['id'] , time() + 3600 * 24, "/");
        //var_dump($login);
     }
+
 
     $mysql -> close();
 

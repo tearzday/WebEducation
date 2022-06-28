@@ -1,6 +1,27 @@
 <?php
     $mysql = new mysqli('localhost', 'root' , '' , 'register');
     
+    $userid = $_COOKIE['user_id'];
+
+    $testScore = $mysql -> query("SELECT tests_id FROM `resultsuser` WHERE user_id = $userid");
+
+    $testScoreUsers = $testScore->fetch_assoc();
+    //var_dump( $testScoreUsers);
+
+    if (count ($testScoreUsers) == 0){
+        echo "Такой пользователь не найден";
+        exit();
+    }
+    else{
+       setcookie('test_id', $user['test_id'] , time() + 3600 * 24, "/");
+       setcookie('score', $user['score'] , time() + 3600 * 24, "/");
+        //var_dump($_COOKIE['test_id']);
+
+       //var_dump( $userid); //нужно решать!
+       //setcookie('id', $user['id'] , time() + 3600 * 24, "/");
+       //var_dump($login);
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -58,13 +79,16 @@
                         <div class="test__rowOne">
                             <div class="test__rowOne__One">
                                 <p>Основы HTML</p>
-                                <p></p>
-                                <p>Ссылка</p>
+                                <p>
+                                   Результат теста: 8/10
+                                </p>
                             </div>
                             <div class="test__rowOne__Two">
                                 <p>Основы CSS</p>
                                 <p></p>
-                                <p>Ссылка</p>
+                                <p>
+                                   Результат теста: 9/10
+                                </p>
                             </div>
                         </div>
                         <div class="test__rowTwo">
@@ -72,13 +96,17 @@
                                 <p>Основы HTML и CSS. <span class="tema">
                                     <br> Часть 1</span></p>
                                 <p></p>
-                                <p>Ссылка</p>
+                                <p>
+                                   Результат теста: 7/10
+                                </p>
                             </div>
                             <div class="test__rowTwo__Two">
                                 <p>Основы HTML и CSS.<span class="tema">
                                     <br> Часть 2</span></p>
                                 <p></p>
-                                <p>Ссылка</p>
+                                <p>
+                                   Результат теста: 10/10
+                                </p>
                             </div>
                         </div>
                     </div>
