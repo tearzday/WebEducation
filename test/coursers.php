@@ -1,4 +1,13 @@
+<?php
 
+
+    if (!isset($_COOKIE['name']) && !isset($_COOKIE['login']) && !isset($_COOKIE['email']))   
+    {   
+        header('Location: /enter.html');
+    }
+
+    else{
+?>
 <!DOCTYPE html>
 <html lang="ru">
     <head>
@@ -74,3 +83,5 @@
     </body>
 
 </html>
+
+<?php } ?>
