@@ -14,20 +14,31 @@
     </head>
     <body>
         <div class="all">
-            <aside class="ahtml">
-                <a href="../../coursers.html" class="t0"><img src="IMG/iconback.svg" alt=""></a>
-                <ul>
-                    <!--В структуре указать про закрывающиеся и не теги и про блочные и строчные-->
-                    <a href="basichtml0.html" class="t1" ><li>Структура HTML-кода<br>
-                        Теги header , footer и main</li></a>
-                    <a href="basichtml1.html" class="t2"><li>Теги section , div , span<br>
-                        Теги nav , article , aside</li></a>
-                    <a href="basichtml2.html" class="t3"><li>Теги meta и link</li></a>
-                    <a href="basichtml3.html" class="t4"><li>Разметка текста</li></a>
-                    <a href="basichtml4.html" class="t5"><li>Изображения и ссылки</li></a>
-                    <a href="test1.html" class="t6"><li>Проверка знаний</li></a>
-                </ul>
-            </aside>
+            <nav class="navbar">
+                <div class="container_nav">
+                  <div class="navbar__wrap">
+                    <div class="hamb">
+                      <div class="hamb__field" id="hamb">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                      </div>
+                    </div>
+                    <a href="../../coursers.html" class="logo" id="logo">WebEducation</a>
+                    <ul class="menu" id="menu">
+                      <li><a href="basichtml0.html">Структура HTML кода</a></li>
+                      <li><a href="basichtml1.html">section, div, span <br>
+                                                    nav, article, aside</a></li>
+                      <li><a href="basichtml2.html">Теги meta и link</a></li>
+                      <li><a href="basichtml3.html">Разметка текста</a></li>
+                      <li><a href="basichtml4.html">Изображение и ссылки</a></li>
+                      <li><a href="../testBD.php?id=1">Проверка знаний</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+           
+          <div class="popup" id="popup"></div>
 
             <main>
             <section class="info">
@@ -79,5 +90,5 @@
 
         </div>
     </body>
-
+    <script src="../burger.js"></script>
 </html>

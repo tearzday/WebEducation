@@ -94,7 +94,6 @@ button:hover{
 .test-results{
     width: 50vw;
     margin: 20px auto;
-    display: none;
 }
 
 .test-results-item{

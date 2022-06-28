@@ -81,6 +81,19 @@ main{
     display: flex;
 }
 
+.BasicsHTML:hover,
+.BasicsCSS:hover ,
+.BasicsHTMLCSS1:hover,
+.BasicsHTMLCSS2:hover{
+    width: 38.5vw;
+    height: 38.5vh;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 45px;
+    margin-right: 1.5vw;
+}
+
 
  h2{
     font-size: 2.5vw;
@@ -107,18 +120,7 @@ img{
     overflow: hidden;
 }
 
-.BasicsHTML:hover,
-.BasicsCSS:hover ,
-.BasicsHTMLCSS1:hover,
-.BasicsHTMLCSS2:hover{
-    width: 38.5vw;
-    height: 38.5vh;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    margin-top: 45px;
-    margin-right: 1.5vw;
-}
+
 
 .BasicsHTML{
     background-color: #dff8ff;
