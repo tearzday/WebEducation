@@ -35,5 +35,5 @@ $password = md5($password."ddsadwqdq");
 
 //переадресация
 
-header('Location: /test/coursers.html')
+header('Location: /test/coursers.php')
 ?>

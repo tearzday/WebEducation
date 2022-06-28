@@ -25,7 +25,9 @@
     }
 
 //засекречивание пароля
-    $password = md5($password."ddsadwqdq");
+    //$password = md5($password."ddsadwqdq");
+   // $password = password_hash($password, PASSWORD_BCRYPT);
+   $password = hash( 'sha256', $password );
 
 //подключение к бд
     $mysql = new mysqli('localhost', 'root' , '' , 'register');

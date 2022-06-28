@@ -46,7 +46,7 @@
             <div class="header__nav">
                 <nav>
                     <ul>
-                        <li><a href="../test/coursers.html">Темы обучения</a></li>
+                        <li><a href="../test/coursers.php">Темы обучения</a></li>
                     </ul>
                 </nav>
             </div>
