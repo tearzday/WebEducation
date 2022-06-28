@@ -238,7 +238,7 @@
                 Количество баллов: <?php echo $score;?></div>
                 </div>
                 <div class="btn">
-                    <a class="block__btnOne" href="../../coursers.html">Вернутся к выбору тем</a>
+                    <a class="block__btnOne" href="../../coursers.php">Вернутся к выбору тем</a>
                 </div>
             </div>
             
